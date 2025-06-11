@@ -7,7 +7,7 @@ function App() {
   const [data, setData] = useState('')
 
   const handleClick = async () => {
-    const response = await fetch('/api/hello')
+    const response = await fetch('/api/api/hello')
     const data = await response.json()
     setData(data)
   }
