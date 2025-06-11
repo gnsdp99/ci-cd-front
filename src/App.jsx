@@ -2,14 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import axios from 'axios'
 
 function App() {
   const [data, setData] = useState('')
 
   const handleClick = async () => {
-    const response = await fetch('/api/hello')
-    const data = await response.json()
-    setData(data)
+    const response = await axios.get('/api/hello')
+    setData(response.data)
   }
 
   return (
