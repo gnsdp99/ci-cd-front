@@ -8,7 +8,7 @@ function App() {
   const [data, setData] = useState('')
 
   const handleClick = async () => {
-    const response = await axios.get('/api/hello')
+    const response = await axios.get('/api/api/hello')
     setData(response.data)
   }
 
