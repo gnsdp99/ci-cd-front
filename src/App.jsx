@@ -7,7 +7,7 @@ function App() {
   const [data, setData] = useState('')
 
   const handleClick = async () => {
-    const response = await fetch('http://44.203.68.75:8080/api/hello')
+    const response = await fetch('/api/hello')
     const data = await response.json()
     setData(data)
   }
