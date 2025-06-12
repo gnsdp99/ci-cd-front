@@ -27,6 +27,7 @@ function App() {
         <button onClick={() => handleClick()}>
           Data from server: {data}
         </button>
+        <p>Update</p>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
