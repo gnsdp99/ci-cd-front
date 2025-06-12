@@ -28,6 +28,7 @@ function App() {
           Data from server: {data}
         </button>
         <h3>Hello World</h3>
+        <p>Update</p>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
